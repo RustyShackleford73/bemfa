@@ -134,7 +134,7 @@ def load_bemfa_cfg(cfg: str) -> Dict[str, Dict]:
     return bemfa_cfg
 
 def main():
-    cfg = load_bemfa_cfg('config.cfg')
+    cfg = load_bemfa_cfg('config.json')
     devices_dir = cfg['devices_dir']
     api_key = cfg['api_key'] 
     devices = load_devices_from_json(devices_dir)
